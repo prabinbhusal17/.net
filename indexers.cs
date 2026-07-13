@@ -1,36 +1,32 @@
 using System;
 
-namespace IndexerExample
+class Library
 {
-    class Student
-    {
-        private string[] subjects = new string[3];
+    private string[] books = new string[4];
 
-        public string this[int index]
-        {
-            get { return subjects[index]; }
-            set { subjects[index] = value; }
-        }
+    public string this[int index]
+    {
+        get { return books[index]; }
+        set { books[index] = value; }
     }
+}
 
-    class Program
+class Program
+{
+    static void Main()
     {
-        static void Main(string[] args)
+        Library library = new Library();
+
+        library[0] = "C Programming";
+        library[1] = "Data Structure";
+        library[2] = "Operating System";
+        library[3] = "Database";
+
+        Console.WriteLine("Books in Library:");
+
+        for (int i = 0; i < 4; i++)
         {
-            Student s = new Student();
-
-            s[0] = "C#";
-            s[1] = "Python";
-            s[2] = "Flutter";
-
-            Console.WriteLine("Subjects:");
-
-            for (int i = 0; i < 3; i++)
-            {
-                Console.WriteLine(s[i]);
-            }
-
-            Console.ReadKey();
+            Console.WriteLine(library[i]);
         }
     }
 }
