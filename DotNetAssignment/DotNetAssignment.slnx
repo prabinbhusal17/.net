@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="ArrayExample/ArrayExample.csproj" />
+  <Project Path="delegate/delegate.csproj" />
+  <Project Path="IndexerExample/IndexerExample.csproj" />
+  <Project Path="JaggedArrayExample/JaggedArrayExample.csproj" />
+</Solution>
