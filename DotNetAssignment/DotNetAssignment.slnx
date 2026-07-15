@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/Solution Items/">
     <File Path=".gitignore" />
+    <Project Path="ASynchronous await/ASynchronous await.csproj" Id="99002895-0f7e-48eb-8cf6-5f267336c826" />
   </Folder>
   <Project Path="ArrayExample/ArrayExample.csproj" />
   <Project Path="delegate/delegate.csproj" />
